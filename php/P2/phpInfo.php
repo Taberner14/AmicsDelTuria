@@ -9,7 +9,9 @@
  * * @copyright 2021 Carlos
  * * @license http://www.fsf.org/licensing/licenses/gpl.txt GPL 2 or later
  * * @version 1
+ * Esto es una prueba
  * */
 
 phpinfo();
+
 ?>
