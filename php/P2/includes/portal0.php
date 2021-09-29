@@ -18,6 +18,8 @@ $central = "/../partials/centralForm.php";
 include(dirname(__FILE__)."/../partials/header.php");
 include(dirname(__FILE__)."/../partials/menu.php");
 include(dirname(__FILE__).$central);
-var_dump($GLOBALS);
+/**
+* var_dump($GLOBALS);
+*/
 include(dirname(__FILE__)."/../partials/footer.php");
 ?>
