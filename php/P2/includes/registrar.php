@@ -1,5 +1,5 @@
 <?php
-include("./gestion_BD.php");
+include("./gestion_BD_LocalPostgress.php");
 
 function handler($pdo,$table)
 {
