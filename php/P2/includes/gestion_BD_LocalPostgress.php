@@ -3,10 +3,10 @@
 #include(dirname(__FILE__) . "/../../../wp-config.php");
 
  /** The name of the database */
- #define('DB_NAME', 'ei1036_42');
+ define('DB_NAME', 'ei1036_42');
 
  /** MySQL database username */
- #define('DB_USER', 'dllido');
+ define('DB_USER', 'dllido');
 
  /** MySQL database password */
  define('DB_PASSWORD', 'luki.99');
@@ -34,7 +34,7 @@
 function crearTablaActividades($pdo, $table)
 {
    try {
-      Crea tabla si no existe
+      //Crea tabla si no existe
       $query = "CREATE TABLE IF NOT EXISTS  $table (
    id SERIAL PRIMARY KEY, 
    nombre CHAR(50) NOT NULL,
