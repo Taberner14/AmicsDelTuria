@@ -17,7 +17,7 @@ nav, footer {
     margin-bottom: 10px;
     padding: 4px;
     text-align: center;
-    background-color: #914bb9;
+    background-color: #8BDE92;
     font-size: 80%;
 }
 
@@ -27,7 +27,7 @@ section {
     margin: 0px 0px 15px 0px;
     padding: 15px 5px 5px 5px;
     background-color: beige;
-    box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, .75);
+    box-shadow: 3px 3px 3px 3px rgba(23, 78, 16, 0.75);
 }
 
 h1 {
@@ -53,7 +53,7 @@ h2 {
 #eslogan {
     float: left;
     margin: 5% 5%;
-    color: #914bb9;
+    color: #8BDE92;
 }
 
 #registro {
@@ -74,7 +74,7 @@ td { border-bottom:1px dotted #BDB76B; }
 
 
 #registro a:hover {
-    color: blue;
+    color: rgb(0, 70, 10);
 }
 
 nav a {
