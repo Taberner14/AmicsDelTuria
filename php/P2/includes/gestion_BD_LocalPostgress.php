@@ -1,6 +1,6 @@
 <?php
 
-#include(dirname(__FILE__) . "/../../../wp-config.php");
+include(dirname(__FILE__) . "/../../../wp-config.php");
 
  /** The name of the database */
  define('DB_NAME', 'ei1036_42');
@@ -98,10 +98,11 @@ function anyadir($pdo, $table,$campos,$valores)
       exit;
    }
 }
-$pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);  
+$pdo = new PDO("pgsql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);  
 
-$table1="A_clientes";
-$table2="A_actividades";
+$table1="al386007_clientes";
+$table2="al386007_actividades";
+
 /*$table=$table2;
 echo $table;
 crearTablaActividades($pdo,$table);
