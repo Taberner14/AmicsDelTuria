@@ -22,6 +22,6 @@
 
 <body>
 	<header>
-		<img src="../img/logo.png" id="logo" alt="logo" />
+		<img id="logo" src="../img/logo.png" id="logo" alt="logo" />
 		<p id="eslogan">Taberner Muñoz: La dupla de oro</p>
 	</header>

@@ -46,8 +46,7 @@ h2 {
 
 #logo {
     float: left;
-    min-with: 80px;
-    width-min: 20%;
+    max-width: 100px;
 }
 
 #eslogan {
