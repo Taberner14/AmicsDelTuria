@@ -14,9 +14,16 @@
  * */
 
 //echo $_SERVER['DOCUMENT_ROOT']."/partials/footer.php";
+
+include(dirname(__FILE__)."/../partials/header.php");
+include(dirname(__FILE__)."/../partials/menu.php");
+
 $central = "/../partials/centralForm.php";
 if (isset($_REQUEST['action'])) $action = $_REQUEST["action"];
 else $action = "home";
+if (isset($_REQUEST['id'])) $id = $_REQUEST["id"];
+else $id = 0;
+
 switch ($action) {
     case "home":
 
@@ -40,6 +47,10 @@ switch ($action) {
     case "listar":
         $central = "/listar.php";
         break;
+    case "borrar":
+        include(dirname(__FILE__)."/borrar.php");
+        $central = "/listar.php";
+        break;
     default:
         $data["error"] = "Accion No permitida";
         $central = "/../partials/centralForm.php";
@@ -47,8 +58,7 @@ switch ($action) {
 
 
 
-include(dirname(__FILE__)."/../partials/header.php");
-include(dirname(__FILE__)."/../partials/menu.php");
+
 include(dirname(__FILE__).$central);
 include(dirname(__FILE__)."/../partials/footer.php");
 ?>
