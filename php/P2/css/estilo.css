@@ -55,21 +55,25 @@ h2 {
     color: #8BDE92;
 }
 
+#negro {
+    color: #000;
+}
+
 #registro {
     position: absolute;
     top: 5px;
     right: 10%;
 }
 
-table { background-color:#FFFFE0;
+table { background-color:#ddfdc2;
     border-collapse:collapse;
-    color:#000;
+    color:#ffffff;
     font-size:18px;
     border:1px;
     margin: 10px auto; }
-th { background-color:#BDB76B; }
+th { background-color:#00460A; color:#ffffff;}
 td, th { border: 1px solid;padding:1px;width: 10%; }
-td { border-bottom:1px dotted #BDB76B; }
+td { border-bottom:1px dotted #00460A; }
 
 
 #registro a:hover {

@@ -13,7 +13,7 @@ function handler($pdo,$table)
         foreach ($rows as $row) {
             print "<tr>";
             foreach ($row as $key => $val) {
-                echo "<td>", $val, "</td>";
+                echo "<td id='negro'>", $val, "</td>";
             }
             print "</tr>";
         }

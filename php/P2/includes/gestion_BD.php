@@ -34,13 +34,17 @@ define('DB_COLLATE', '');
 function crearTablaActividades($pdo, $table)
 {
    try {
+      //Para borrar la tabla si queremos
+      //$query = "DROP TABLE $table;";
+      //$pdo->exec($query);
+
       //Crea tabla si no existe
       $query = "CREATE TABLE IF NOT EXISTS  $table (
    id SERIAL PRIMARY KEY, 
    nombre CHAR(50) NOT NULL,
    descripcion CHAR(250), 
    localizacion CHAR(50),
-   foto_file VARCHAR(50) );";
+   distancia int );";
 
       $pdo->exec($query);
    } catch (PDOException $e) {

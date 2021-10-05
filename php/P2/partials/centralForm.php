@@ -1,18 +1,29 @@
 <main>
-	<h1>Gestión de Actividades </h1>
+	<h1>Gestión de Carreras </h1>
 	<form class="fom_usuario" action="?action=registrar" method="POST">
 
 		<legend>Datos básicos</legend>
-		<label for="nombre">Nombre</label>
+		<label for="nombre">Nombre carrera</label>
 		<br/>
 		<input type="text" name="nombre" class="item_requerid" size="20" maxlength="25" value="<?php print $nombre ?>"
-		 placeholder="Actividad1" />
+		 placeholder="Volta a les hermites" />
 		<br/>
-		<label for="descripcion">Descripción</label>
+		<br>
+		<label for="descripcion">Descripción del terreno</label>
 		<br/>
 		<input type="text" name="descripcion" class="item_requerid" size="20" maxlength="25" value="<?php print $descripcion ?>"
-		 placeholder="Descripción Actividad" />
-	
+		placeholder="Terreno mixto, montaña y senda" />
+
+		<br>
+		<label for="localizacion">Lugar</label>
+		<br/>
+		<input type="text" name="localización" class="item_requerid" size="20" maxlength="25" value="<?php print $localizacion ?>"
+		placeholder="Burriana, Castellón" />
+
+		<br>
+		<label for="distancia">Distancia</label>
+		<br/>
+		<input type="number" name="distancia" class="item_requerid" size="20" value="<?php print $distancia ?>"/> <label> km</label>
 	
 	
 		<br/>
