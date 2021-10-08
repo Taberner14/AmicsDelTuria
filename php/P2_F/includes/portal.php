@@ -49,9 +49,7 @@ switch ($action) {
         $central = "/borrar.php";
         break;
     case "modificar":
-        $nombre = 
-
-        //$central = "/../partials/centralForm.php";
+        $central = "/modificar.php";
         break;
     default:
         $data["error"] = "Accion No permitida";
