@@ -1,14 +1,14 @@
 <?php
 include("./gestion_BD.php");
 
-function borrado($pdo,$table,$act)
+function cogerDatos($pdo,$table,$act)
 {
-    $query = "DELETE FROM $table 
+    $query = "SELECT nombre FROM $table 
     WHERE id=$act";
-    echo "Borrada la actividad con identificador $act";
     
     try { 
-        $pdo->exec($query);
+        $nombre = $pdo->query($query);
+        echo $nombre['nombre'];
     } catch (PDOExeption $e) {
         echo ($e->getMessage());
     }
@@ -16,5 +16,5 @@ function borrado($pdo,$table,$act)
 }
 
 $table = $table2;
-borrado( $pdo,$table, $id);
+cogerDatos( $pdo,$table, $id);
 ?>
